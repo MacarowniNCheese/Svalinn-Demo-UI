@@ -36,3 +36,183 @@
     transform: rotate(360deg);
   }
 }
+
+div {
+  white-space: pre;
+  
+}
+
+.title {
+  width: 60%;
+  left-margin: 20%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  padding: "10px";
+  width: 80%;
+  margin: 10%;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  position: relative;
+  bottom: 15px;
+
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inPicture { 
+  left: 30px;
+  bottom: 80px;
+}
+
+video {
+  margin-top: 20px;
+  width: 600px;
+  height: auto;
+  border: 1px solid gray;
+}
+
+canvas {
+  margin-top: 20px;
+  width: 600px;
+  height: auto;
+  border: 1px solid gray;
+}
+
+img {
+  margin-top: 20px;
+  width: 110px;
+  height: auto;
+  border: 1px solid gray;
+}
+
+.deepfakes { 
+  width: 300px;
+  padding: 15px;
+  height: auto;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 38px;
+  width: 124px;
+  left: -2px;
+  bottom: -2px;
+  background-color: lightblue;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+.slider:after
+{
+ content:'Own Picture';
+ color: black;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 48%;
+ left: 34%;
+ font-size: 15px;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider:after
+{  
+  content:'Political Figure';
+  top: 48%;
+  left: 77%;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3px;
+}
+
+.slider.round:before {
+  border-radius: 5%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
